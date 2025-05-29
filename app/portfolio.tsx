@@ -139,14 +139,7 @@ export default function Portfolio() {
   ]
 
   const experience = [
-    {
-      title: "Senior Full Stack Developer",
-      company: "Tech Solutions Inc.",
-      period: "2022 - Present",
-      description:
-        "Lead development of enterprise web applications using Laravel, React, and Vue.js. Mentored junior developers and architected scalable solutions for high-traffic applications.",
-      achievements: ["Led team of 5 developers", "Increased performance by 40%", "Delivered 15+ projects"],
-    },
+
     {
       title: "PHP Developer",
       company: "Digital Agency Co.",
@@ -172,7 +165,7 @@ export default function Portfolio() {
         <div className="container mx-auto px-3 sm:px-4 md:px-6 lg:px-8 max-w-7xl">
           <div className="flex h-14 sm:h-16 items-center justify-between">
             <div className="font-bold text-lg sm:text-xl bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
-              Yell Khaing
+              Portfolio
             </div>
 
             {/* Desktop Navigation */}
@@ -188,7 +181,7 @@ export default function Portfolio() {
                   key={item.id}
                   href={`#${item.id}`}
                   onClick={() => handleNavClick(item.id)}
-                  className={`text-sm font-medium transition-colors duration-200 relative
+                  className={`text-md font-medium transition-colors duration-200 relative
             hover:text-primary
             ${activeSection === item.id ? "text-primary" : ""}
           `}
@@ -523,12 +516,12 @@ export default function Portfolio() {
                       ))}
                     </div>
                     <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
-                      <Button variant="outline" size="sm" className="flex-1 group/btn text-sm" asChild>
+                      {/* <Button variant="outline" size="sm" className="flex-1 group/btn text-sm" asChild>
                         <a href={project.github}>
                           <Github className="w-3 h-3 sm:w-4 sm:h-4 mr-1 sm:mr-2 group-hover/btn:scale-110 transition-transform" />
                           Code
                         </a>
-                      </Button>
+                      </Button> */}
                       <Button size="sm" className="flex-1 group/btn text-sm" asChild>
                         <a href={project.live}>
                           <ExternalLink className="w-3 h-3 sm:w-4 sm:h-4 mr-1 sm:mr-2 group-hover/btn:scale-110 transition-transform" />
@@ -589,12 +582,12 @@ export default function Portfolio() {
                     )}
                   </div>
                   <div className="flex flex-col sm:flex-row gap-2">
-                    <Button variant="outline" size="sm" className="flex-1 group/btn text-xs sm:text-sm" asChild>
+                    {/* <Button variant="outline" size="sm" className="flex-1 group/btn text-xs sm:text-sm" asChild>
                       <a href={project.github}>
                         <Github className="w-3 h-3 mr-1 group-hover/btn:scale-110 transition-transform" />
                         Code
                       </a>
-                    </Button>
+                    </Button> */}
                     <Button size="sm" className="flex-1 group/btn text-xs sm:text-sm" asChild>
                       <a href={project.live}>
                         <ExternalLink className="w-3 h-3 mr-1 group-hover/btn:scale-110 transition-transform" />
@@ -680,20 +673,20 @@ export default function Portfolio() {
 
             <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 mb-8 sm:mb-12 px-2">
               <Button size="lg" className="group w-full sm:w-auto" asChild>
-                <a href="mailto:john@example.com">
+                <a href="mailto:kwonfsdev95@gmail.com">
                   <Mail className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" />
-                  <span className="hidden sm:inline">john@example.com</span>
+                  <span className="hidden sm:inline">kwonfsdev95@gmail.com</span>
                   <span className="sm:hidden">Email Me</span>
                 </a>
               </Button>
               <Button variant="outline" size="lg" className="group w-full sm:w-auto" asChild>
-                <a href="https://linkedin.com/in/johndeveloper">
+                <a href="https://www.linkedin.com/in/yellkhaing-dev/">
                   <Linkedin className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" />
                   LinkedIn
                 </a>
               </Button>
               <Button variant="outline" size="lg" className="group w-full sm:w-auto" asChild>
-                <a href="https://github.com/johndeveloper">
+                <a href="https://github.com/ykmss">
                   <Github className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" />
                   GitHub
                 </a>
@@ -703,9 +696,11 @@ export default function Portfolio() {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-3xl mx-auto">
               <Card className="text-center hover:shadow-lg transition-all duration-300 border-primary/20 hover:border-primary/40 dark:hover:shadow-primary/5">
                 <CardContent className="p-4 sm:p-6">
-                  <Mail className="w-6 h-6 sm:w-8 sm:h-8 mx-auto mb-2 sm:mb-3 text-primary" />
-                  <h3 className="font-semibold mb-1 text-sm sm:text-base">Email</h3>
-                  <p className="text-xs sm:text-sm text-muted-foreground break-all">john@example.com</p>
+                  <a href="mailto:kwonfsdev95@gmail.com">
+                    <Mail className="w-6 h-6 sm:w-8 sm:h-8 mx-auto mb-2 sm:mb-3 text-primary" />
+                    <h3 className="font-semibold mb-1 text-sm sm:text-base">Email</h3>
+                    <p className="text-xs sm:text-sm text-muted-foreground break-all">kwonfsdev95@gmail.com</p>
+                  </a>
                 </CardContent>
               </Card>
 
@@ -713,7 +708,7 @@ export default function Portfolio() {
                 <CardContent className="p-4 sm:p-6">
                   <MapPin className="w-6 h-6 sm:w-8 sm:h-8 mx-auto mb-2 sm:mb-3 text-primary" />
                   <h3 className="font-semibold mb-1 text-sm sm:text-base">Location</h3>
-                  <p className="text-xs sm:text-sm text-muted-foreground">San Francisco, CA</p>
+                  <p className="text-xs sm:text-sm text-muted-foreground">Yangon, Myanmar</p>
                 </CardContent>
               </Card>
 
@@ -733,7 +728,7 @@ export default function Portfolio() {
       <footer className="py-6 sm:py-8 px-3 sm:px-4 md:px-6 border-t bg-muted/30 dark:bg-muted/10">
         <div className="container mx-auto text-center text-muted-foreground max-w-7xl">
           <p className="text-xs sm:text-sm">
-            &copy; 2024 John Developer. All rights reserved. Built with React & Tailwind CSS.
+            &copy; 2025 Yell Khaing (Full Stack Developer). All rights reserved.
           </p>
         </div>
       </footer>
