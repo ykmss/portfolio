@@ -73,9 +73,9 @@ export default function Portfolio() {
     {
       title: "Edu Plus",
       description:
-        "Full-stack e-commerce solution built with Laravel and Vue.js featuring payment integration and admin dashboard",
+        "Edu Plus is a comprehensive school management system designed to simplify and automate daily operations for educational institutions. It offers tools for managing students, classes, attendance, grades, and schedules, while also improving communication among teachers, students, and parents—all within an intuitive and easy-to-use platform.",
       tech: ["Laravel", "Vue.js", "MySQL"],
-      image: "/project1.jpg",
+      image: "/eduplus.png",
       github: "#",
       live: "#",
       featured: true,
@@ -84,42 +84,42 @@ export default function Portfolio() {
     {
       title: "BrianFit",
       description:
-        "International school management platform featuring a robust admin panel, integrated content management system (CMS), and automated mailing system. Enables administrators to efficiently manage school operations, publish updates",
+        "International school management website featuring a robust admin panel, integrated content management system (CMS), and automated mailing system. Enables administrators to efficiently manage school operations, publish updates",
       tech: ["Laravel", "Filament", "MySQL"],
-      image: "/project2.jpg",
+      image: "/brainfit.png",
       github: "#",
       live: "#",
       featured: true,
       status: "Live",
     },
     {
-      title: "Task Management App",
+      title: "Siam Lotus",
       description:
-        "Collaborative task management application with real-time updates, built using React and Laravel API with advanced project tracking features.",
-      tech: ["React", "Laravel API", "WebSockets", "Tailwind CSS"],
-      image: "/project3.jpg",
+        "Siam Lotus is a modern spa website featuring an integrated content management system (CMS) that allows staff to easily update services, promotions, and gallery images. The platform provides an elegant and relaxing user experience, enabling customers to explore spa treatments, view pricing, and make online bookings. Designed for both clients and administrators, Siam Lotus streamlines spa management and enhances customer engagement through a user-friendly interface.",
+      tech: [ "Laravel","Filament", "Tailwind CSS"],
+      image: "/siamlotus.png",
       github: "#",
       live: "#",
       featured: false,
       status: "Development",
     },
     {
-      title: "Restaurant Booking System",
+      title: "Tharabha Hotel & Restaurant",
       description:
-        "Online reservation system for restaurants with table management, customer notifications, and comprehensive analytics dashboard.",
-      tech: ["PHP", "Vue.js", "MySQL", "Bootstrap"],
-      image: "/project1.jpg",
+        "Tharabha Hotel & Restaurant is a digital platform that streamlines online reservations, table management, and customer notifications. It features an intuitive booking system and a powerful analytics dashboard, making it easy for staff to manage reservations and for customers to book tables or rooms online.",
+      tech: ["PHP", "Blade", "MySQL", "Tailwind CSS"],
+      image: "/tharabha.png",
       github: "#",
       live: "#",
       featured: false,
       status: "Live",
     },
     {
-      title: "Content Management System",
+      title: "Pyithar Kyaw",
       description:
-        "Custom CMS built with Laravel and Filament, featuring role-based permissions, media management, and advanced SEO optimization tools.",
-      tech: ["Laravel", "Filament", "MySQL", "Redis"],
-      image: "/project2.jpg",
+        "Pyithar Kyaw is a job service platform designed to connect job seekers with employers efficiently. The system allows users to browse job listings, submit applications",
+      tech: ["Laravel", "Filament", "MySQL"],
+      image: "/pyitharkyaw .png",
       github: "#",
       live: "#",
       featured: false,
@@ -129,7 +129,7 @@ export default function Portfolio() {
       title: "Real Estate Portal",
       description:
         "Property listing platform with advanced search, virtual tours, agent management system, and integrated payment processing.",
-      tech: ["Laravel", "React", "PostgreSQL", "AWS S3"],
+      tech: ["Laravel", "React", "MySQL", "Tailwind CSS"],
       image: "/project3.jpg",
       github: "#",
       live: "#",
@@ -141,20 +141,32 @@ export default function Portfolio() {
   const experience = [
 
     {
-      title: "PHP Developer",
-      company: "Digital Agency Co.",
-      period: "2020 - 2022",
+      title: "OJT Developer",
+      company: "Minn Shinsaw Co.",
+      period: "2024",
       description:
-        "Developed custom web applications and e-commerce platforms. Specialized in Laravel framework and MySQL database optimization with focus on performance.",
-      achievements: ["Built 20+ web applications", "Optimized database queries", "Reduced load times by 60%"],
+        "Built and maintained custom CMS websites using Filament, Laravel, and modern JavaScript frameworks (React & Vue.js). Developed responsive designs and ensured seamless user experiences across devices. Focused on scalable architecture and long-term maintainability.",
+      achievements: [
+        "Developed CMS platforms with Filament for efficient admin management",
+        "Implemented responsive UI with React and Vue.js",
+        "Maintained and optimized Laravel backend for performance and security"
+      ],
     },
     {
       title: "Junior Web Developer",
-      company: "StartUp Ventures",
-      period: "2019 - 2020",
+      company: "Minn Shinsaw Co.",
+      period: "2025",
       description:
-        "Built responsive websites and web applications using PHP, JavaScript, and modern CSS frameworks with emphasis on user experience.",
-      achievements: ["Completed 30+ projects", "Learned modern frameworks", "Improved code quality"],
+        "Developed and maintained custom CMS and web applications using Laravel, Filament, React, Vue.js, and Next.js. Built RESTful APIs, implemented mailing systems, and regularly added new features based on business needs. Managed role-based permissions and contributed to both backend and frontend development. Responsible for maintaining existing projects and developing new websites to support company growth.",
+      achievements: [
+        "Built and maintained CMS platforms with Filament and Laravel",
+        "Developed RESTful APIs and integrated mailing systems",
+        "Implemented role-based permissions for secure access control",
+        "Created responsive user interfaces with React, Vue.js, and Next.js",
+        "Added new features and enhancements based on requirements",
+        "Maintained and optimized backend for performance and security",
+        "Developed new websites and ensured smooth deployment"
+      ],
     },
   ]
 
@@ -467,8 +479,6 @@ export default function Portfolio() {
               Here are some of my recent projects showcasing my skills in full-stack development
             </p>
           </div>
-
-          {/* Featured Projects Grid */}
           <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 mb-16 sm:mb-20">
             {projects
               .filter((project) => project.featured)
@@ -483,11 +493,6 @@ export default function Portfolio() {
                       alt={project.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
-                    <div className="absolute top-3 sm:top-4 right-3 sm:right-4">
-                      <Badge className={project.status === "Live" ? "bg-green-500 text-xs" : "bg-orange-500 text-xs"}>
-                        {project.status}
-                      </Badge>
-                    </div>
                   </div>
                   <CardHeader className="p-4 sm:p-6">
                     <CardTitle className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 group-hover:text-primary transition-colors text-lg sm:text-xl">
@@ -503,7 +508,7 @@ export default function Portfolio() {
                       {project.description}
                     </CardDescription>
                   </CardHeader>
-                  <CardContent className="p-4 sm:p-6 pt-0">
+                  <CardContent className="pt-0 px-3 sm:px-6 pb-4">
                     <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-4 sm:mb-6">
                       {project.tech.map((tech, techIndex) => (
                         <Badge
@@ -515,19 +520,28 @@ export default function Portfolio() {
                         </Badge>
                       ))}
                     </div>
-                    <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
-                      {/* <Button variant="outline" size="sm" className="flex-1 group/btn text-sm" asChild>
-                        <a href={project.github}>
-                          <Github className="w-3 h-3 sm:w-4 sm:h-4 mr-1 sm:mr-2 group-hover/btn:scale-110 transition-transform" />
-                          Code
-                        </a>
-                      </Button> */}
-                      <Button size="sm" className="flex-1 group/btn text-sm" asChild>
-                        <a href={project.live}>
-                          <ExternalLink className="w-3 h-3 sm:w-4 sm:h-4 mr-1 sm:mr-2 group-hover/btn:scale-110 transition-transform" />
-                          Live Demo
+                    <div className="flex flex-col sm:flex-row gap-2 w-full">
+                      <Button
+                        size="lg"
+                        className="w-full justify-center items-center gap-2 rounded-xl px-6 py-3 bg-gradient-to-r from-primary to-primary/80 text-white font-semibold text-base shadow-lg hover:from-primary/90 hover:to-primary/70 transition-all duration-200 focus:ring-2 focus:ring-primary focus:outline-none"
+                        asChild
+                      >
+                        <a href={project.live} target="_blank" rel="noopener noreferrer">
+                          <ExternalLink className="w-5 h-5" />
+                          <span>Live Demo</span>
                         </a>
                       </Button>
+                      {/* <Button
+                        variant="outline"
+                        size="lg"
+                        className="w-full justify-center items-center gap-2 rounded-full px-6 py-3 font-semibold text-base transition-all duration-200"
+                        asChild
+                      >
+                        <a href={project.github} target="_blank" rel="noopener noreferrer">
+                          <Github className="w-5 h-5" />
+                          <span>Code</span>
+                        </a>
+                      </Button> */}
                     </div>
                   </CardContent>
                 </Card>
@@ -542,7 +556,7 @@ export default function Portfolio() {
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 px-2 sm:px-4 md:px-6">
             {projects.map((project, index) => (
               <Card
                 key={index}
@@ -554,11 +568,6 @@ export default function Portfolio() {
                     alt={project.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute top-2 sm:top-3 right-2 sm:right-3">
-                    <Badge className={project.status === "Live" ? "bg-green-500 text-xs" : "bg-orange-500 text-xs"}>
-                      {project.status}
-                    </Badge>
-                  </div>
                 </div>
                 <CardHeader className="pb-2 sm:pb-3 p-3 sm:p-4">
                   <CardTitle className="text-base sm:text-lg group-hover:text-primary transition-colors">
@@ -568,7 +577,7 @@ export default function Portfolio() {
                     {project.description}
                   </CardDescription>
                 </CardHeader>
-                <CardContent className="pt-0 p-3 sm:p-4">
+                <CardContent className="pt-0 px-3 sm:px-6 pb-4">
                   <div className="flex flex-wrap gap-1 mb-3 sm:mb-4">
                     {project.tech.slice(0, 3).map((tech, techIndex) => (
                       <Badge key={techIndex} variant="secondary" className="text-xs bg-muted dark:bg-muted/50">
@@ -581,19 +590,28 @@ export default function Portfolio() {
                       </Badge>
                     )}
                   </div>
-                  <div className="flex flex-col sm:flex-row gap-2">
-                    {/* <Button variant="outline" size="sm" className="flex-1 group/btn text-xs sm:text-sm" asChild>
-                      <a href={project.github}>
-                        <Github className="w-3 h-3 mr-1 group-hover/btn:scale-110 transition-transform" />
-                        Code
-                      </a>
-                    </Button> */}
-                    <Button size="sm" className="flex-1 group/btn text-xs sm:text-sm" asChild>
-                      <a href={project.live}>
-                        <ExternalLink className="w-3 h-3 mr-1 group-hover/btn:scale-110 transition-transform" />
-                        Demo
+                  <div className="flex flex-col sm:flex-row gap-2 w-full">
+                    <Button
+                      size="lg"
+                      className="w-full justify-center items-center gap-2 rounded-xl px-6 py-3 bg-gradient-to-r from-primary to-primary/80 text-white font-semibold text-base shadow-lg hover:from-primary/90 hover:to-primary/70 transition-all duration-200 focus:ring-2 focus:ring-primary focus:outline-none"
+                      asChild
+                    >
+                      <a href={project.live} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="w-5 h-5" />
+                        <span>Live Demo</span>
                       </a>
                     </Button>
+                    {/* <Button
+                      variant="outline"
+                      size="lg"
+                      className="w-full justify-center items-center gap-2 rounded-full px-6 py-3 font-semibold text-base transition-all duration-200"
+                      asChild
+                    >
+                      <a href={project.github} target="_blank" rel="noopener noreferrer">
+                        <Github className="w-5 h-5" />
+                        <span>Code</span>
+                      </a>
+                    </Button> */}
                   </div>
                 </CardContent>
               </Card>
