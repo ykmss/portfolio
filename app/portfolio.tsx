@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { ThemeToggle } from "../components/theme-toggle"
+import  Loader  from "../components/loader"
 import {
   Github,
   Linkedin,
@@ -31,6 +32,13 @@ export default function Portfolio() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [activeSection, setActiveSection] = useState<string | null>(null)
   const clickedSection = useRef<string | null>(null)
+  const [loader, setLoader] = useState(true);
+  
+  // Loader effect
+  useEffect(() => {
+    const timer = setTimeout(() => setLoader(false), 3000); // 1.2s loading
+    return () => clearTimeout(timer);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -55,6 +63,13 @@ export default function Portfolio() {
     setTimeout(() => {
       clickedSection.current = null
     }, 400) // Animation duration
+  }
+
+   // Show loader if loading
+  if (loader) {
+    return (
+      <Loader/>
+    );
   }
 
 
