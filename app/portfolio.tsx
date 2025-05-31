@@ -92,7 +92,7 @@ export default function Portfolio() {
       tech: ["Laravel", "Vue.js", "MySQL"],
       image: "/eduplus.png",
       github: "#",
-      live: "#",
+      live: "https://www.eduplusmyanmar.com/",
       featured: true,
       status: "Live",
     },
@@ -114,7 +114,7 @@ export default function Portfolio() {
       tech: [ "Laravel","Filament", "Tailwind CSS"],
       image: "/siamlotus.png",
       github: "#",
-      live: "#",
+      live: "https://siamlotusmm.com/",
       featured: false,
       status: "Development",
     },
@@ -125,7 +125,7 @@ export default function Portfolio() {
       tech: ["PHP", "Blade", "MySQL", "Tailwind CSS"],
       image: "/tharabha.png",
       github: "#",
-      live: "#",
+      live: "https://tharabha.com/",
       featured: false,
       status: "Live",
     },
@@ -136,7 +136,7 @@ export default function Portfolio() {
       tech: ["Laravel", "Filament", "MySQL"],
       image: "/pyitharkyaw .png",
       github: "#",
-      live: "#",
+      live: "https://pyitharkyaw.com.mm/",
       featured: false,
       status: "Live",
     },
@@ -311,7 +311,7 @@ export default function Portfolio() {
         <div className="container mx-auto text-center relative max-w-7xl">
           <div className="max-w-5xl mx-auto">
             <Avatar className="w-24 h-24 sm:w-32 sm:h-32 md:w-36 md:h-36 lg:w-40 lg:h-40 mx-auto mb-6 sm:mb-8">
-              <AvatarImage src="/profile.jpg" alt="John Developer" />
+              <AvatarImage src="/profile2.JPG" alt="John Developer" />
               <AvatarFallback className="text-lg sm:text-2xl md:text-3xl bg-gradient-to-br from-primary to-primary/60 text-primary-foreground">
               </AvatarFallback>
             </Avatar>
