@@ -234,7 +234,7 @@ export default function Portfolio() {
                 asChild
               >
                 <a
-                  href="/yellkhaingdevresume.pdf"
+                  href="/yellkhaing-dev-cv.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   download
@@ -311,7 +311,7 @@ export default function Portfolio() {
         <div className="container mx-auto text-center relative max-w-7xl">
           <div className="max-w-5xl mx-auto">
             <Avatar className="w-24 h-24 sm:w-32 sm:h-32 md:w-36 md:h-36 lg:w-40 lg:h-40 mx-auto mb-6 sm:mb-8">
-              <AvatarImage src="/profile.jfif" alt="John Developer" />
+              <AvatarImage src="/profile.jpg" alt="John Developer" />
               <AvatarFallback className="text-lg sm:text-2xl md:text-3xl bg-gradient-to-br from-primary to-primary/60 text-primary-foreground">
               </AvatarFallback>
             </Avatar>
