@@ -141,13 +141,13 @@ export default function Portfolio() {
       status: "Live",
     },
     {
-      title: "Real Estate Portal",
+      title: "Invoice Generator",
       description:
-        "Property listing platform with advanced search, virtual tours, agent management system, and integrated payment processing.",
-      tech: ["Laravel", "React", "MySQL", "Tailwind CSS"],
-      image: "/project3.jpg",
-      github: "#",
-      live: "#",
+        "Invoice Generator is a web application designed to simplify the creation and management of professional invoices. The platform allows users to input customer and company details, add line items, and automatically calculate totals. Users can upload and display their company logo, generate invoices in a clean format, and download them as PDF files for easy sharing or record-keeping. This tool streamlines the invoicing process for businesses, ensuring accuracy and a polished, branded appearance for every invoice.",
+      tech: ["Tpyescript", "Next Js", "Tailwind CSS"],
+      image: "/invoice.png",
+      github: "https://github.com/ykmss/Invoie-Generator",
+      live: "https://invoie-generator.vercel.app/",
       featured: false,
       status: "Live",
     },
@@ -333,7 +333,7 @@ export default function Portfolio() {
                 className="text-xs sm:text-sm py-1.5 sm:py-2 px-3 sm:px-4 bg-primary/10 text-primary border-primary/20 dark:bg-primary/20 dark:text-primary"
               >
                 <Server className="w-3 h-3 sm:w-4 sm:h-4 mr-1 sm:mr-2" />
-                Laravel Expert
+                Laravel
               </Badge>
               <Badge
                 variant="secondary"
